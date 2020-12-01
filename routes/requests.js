@@ -1,5 +1,5 @@
-var fs = require('fs');
-var path = require('path');
+const fs = require('fs');
+const path = require('path');
 
 module.exports = app => {
 
@@ -12,6 +12,7 @@ module.exports = app => {
 
         app.get("/api/notes", function(req, res) {
             res.json(notes);
+
         });
 
         app.post("/api/notes", function(req, res) {
@@ -30,7 +31,6 @@ module.exports = app => {
             updateDb();
             console.log("Deleted note with id " + req.params.id);
         });
-
 
         app.get('/notes', function(req, res) {
             res.sendFile(path.join(__dirname, "../public/notes.html"));
