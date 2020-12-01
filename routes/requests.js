@@ -2,11 +2,11 @@ const fs = require('fs');
 const path = require('path');
 
 module.exports = app => {
-
+    //reading the db.json file
     fs.readFile("db/db.json", "utf8", (err, data) => {
 
         if (err) throw err;
-
+        //parsing the json notes data
         var notes = JSON.parse(data);
 
 
