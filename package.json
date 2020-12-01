@@ -1,25 +1,14 @@
 {
-  "name": "NoteTaker",
+  "name": "note-taker",
   "version": "1.0.0",
-  "description": "Create an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.",
-  "main": "index.js",
+  "description": "",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/greysonkirk/NoteTaker.git"
-  },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/greysonkirk/NoteTaker/issues"
-  },
-  "homepage": "https://github.com/greysonkirk/NoteTaker#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "exprss": "0.0.1-security",
-    "node": "^15.3.0"
+    "express": "^4.16.4"
   }
 }
